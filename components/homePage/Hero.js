@@ -3,7 +3,7 @@ import React from "react";
 import profile from "../../public/profile.jpg";
 const Hero = (props) => {
   return (
-    <section className="flex justify-center items-center flex-col">
+    <section className="flex justify-center items-center flex-col my-9 sm:my-14">
       <div>
         <Image
           src={profile}

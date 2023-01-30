@@ -5,7 +5,7 @@ import { use, useState } from "react";
 const NavBar = (props) => {
   let con = props.con;
   return (
-    <nav className="w-full xl:px-0 sm:px-16 px-6 flex py-6 justify-between items-center navbar text-white">
+    <nav className="w-full  flex py-6 justify-between items-center navbar text-white">
       <h1 className="font-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white ">
         <Link href="/">
           BL
