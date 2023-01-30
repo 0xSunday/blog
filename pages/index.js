@@ -30,6 +30,15 @@ export default function Home() {
         "nextjs is the react framework for the production ready website ",
       date: "10-01-2023",
     },
+    {
+      slug: "getting-started-with-nextjs",
+      title: "getting started with nextjs",
+      image: "getting-started-with-nextjs.png",
+      excerpt:
+        "nextjs is the react framework for the production ready website ",
+      date: "10-01-2023",
+    },
+
   ];
 
   return (
