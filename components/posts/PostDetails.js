@@ -1,5 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import classes from "./markdown.module.css";
 const PostDetails = (props) => {
   const { post } = props;
   return (
@@ -10,7 +11,9 @@ const PostDetails = (props) => {
         <div className="absolute right-10 top-10 z-0 right-1/6 w-[20%] h-[40%] rounded-full pink__gradient"></div>
       </h1>
       <div className="">
-        <ReactMarkdown>{post.content}</ReactMarkdown>
+        <ReactMarkdown className={classes.reactMarkDown}>
+          {post.content}
+        </ReactMarkdown>
       </div>
     </article>
   );
