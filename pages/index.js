@@ -3,49 +3,24 @@ import Hero from "@/components/homePage/Hero";
 import NavBar from "@/components/NavBar";
 
 import { Fragment } from "react";
+import { getFeaturedPosts } from "../lib/post-util";
 
-export default function Home() {
-  const dummy_data = [
-    {
-      slug: "getting-started-with-nextjs",
-      title: "getting started with nextjs",
-      image: "getting-started-with-nextjs.png",
-      excerpt:
-        "nextjs is the react framework for the production ready website ",
-      date: "10-01-2023",
-    },
-    {
-      slug: "getting-started-with-nextjs",
-      title: "getting started with nextjs",
-      image: "getting-started-with-nextjs.png",
-      excerpt:
-        "nextjs is the react framework for the production ready website ",
-      date: "10-01-2023",
-    },
-    {
-      slug: "getting-started-with-nextjs",
-      title: "getting started with nextjs",
-      image: "getting-started-with-nextjs.png",
-      excerpt:
-        "nextjs is the react framework for the production ready website ",
-      date: "10-01-2023",
-    },
-    {
-      slug: "getting-started-with-nextjs",
-      title: "getting started with nextjs",
-      image: "getting-started-with-nextjs.png",
-      excerpt:
-        "nextjs is the react framework for the production ready website ",
-      date: "10-01-2023",
-    },
-
-  ];
-
+export default function Home(props) {
   return (
     <div className="bg-primary xl:px-0 sm:px-16 px-6  ">
-      <NavBar con={true} />
+      <NavBar con={true} cont={false} />
       <Hero />
-      <FeaturedPost posts={dummy_data} />
+      <FeaturedPost posts={props.posts} />
     </div>
   );
+}
+
+export function getStaticProps() {
+  const featuredPost = getFeaturedPosts();
+
+  return {
+    props: {
+      posts: featuredPost,
+    },
+  };
 }

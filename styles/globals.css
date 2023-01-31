@@ -249,5 +249,8 @@ body{
 .image-box:hover {
   z-index: 5;
   transform: scale(1.2);
+
+ 
+
 }
 
