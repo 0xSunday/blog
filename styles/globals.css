@@ -139,8 +139,6 @@
   filter: blur(750px);
 }
 
-
-
 .menu li:after,
 .menu li:before {
   content: "";
@@ -195,49 +193,48 @@
   color: yellow;
 }
 
-
-body{
-  background:black;
+body {
+  background: black;
 }
 
-.main{
-  width:330px;
-  height:330px;
-  border:1px solid #CCC;
-  position:absolute;
-  top:0; bottom:0; left:0;right:0;
-  margin:auto;
-  border-radius:50%; 
+.main {
+  width: 330px;
+  height: 330px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 50%;
 }
 
-.circle{
-  width:30px;
-  height:30px;
-  background:cyan;
-  border-radius:50%;
-  position:absolute;
-  top:0; bottom:0; left:0;right:0;
-  overflow:hidden;
-  margin:auto;
+.circle {
+  width: 30px;
+  height: 30px;
+  background: cyan;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  margin: auto;
   animation: circle 6s linear infinite;
 }
 
-@keyframes circle{
-  0%{
-    transform:rotate(0deg)
-              translate(-165px)
-              rotate(0deg);
-  
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
   }
-  100%{
-    transform:rotate(360deg)
-              translate(-165px)
-              rotate(-360deg);
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
   }
 }
 
-
-.image-box  {
+.image-box {
   max-width: 100%;
   transition: all 0.3s;
   display: block;
@@ -249,8 +246,11 @@ body{
 .image-box:hover {
   z-index: 5;
   transform: scale(1.2);
-
- 
-
 }
 
+@media only screen and (max-width: 600px) {
+  .image-box:hover {
+    z-index: 5;
+    transform: scale(1);
+  }
+}
