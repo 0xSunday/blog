@@ -38,7 +38,6 @@
 
   border-color: rgb(253 224 71 / var(--tw-text-opacity));
   border-radius: 10px;
-  
 }
 .reactMarkDown p {
   font-size: 1.5rem;
@@ -67,7 +66,7 @@
     padding: 0;
   }
 
-  .reactMarkDown code{
+  .reactMarkDown code {
     padding: 30px 20px;
     font-size: 1rem;
   }
