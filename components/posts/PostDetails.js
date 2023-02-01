@@ -1,22 +1,26 @@
 import React from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import ReactMarkdown from "react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { coldarkDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import classes from "./markdown.module.css";
 const PostDetails = (props) => {
   const { post } = props;
 
-  const costomRenderers = {
+  const customRenderers = {
     code(code) {
       const { className, children } = code;
-      const language = className.split("-")[1]; // className is something like language-js => We need the "js" part here
+      // const language = className.split("-")[1]; // className is something like language-js => We need the "js" part here
       return (
-        <SyntaxHighlighter language="javascript" style={atomDark}>
-          {codeString}
-        </SyntaxHighlighter>
+        <SyntaxHighlighter 
+      // className={classes.reactMarkDownCode}
+          style={coldarkDark}
+          language="javascript"
+          children={children}
+        />
       );
     },
   };
+
   return (
     <article className="text-white sm:px-10 lg:px-20 h">
       <h1 className="font-1 font-poppins font-semibold -mb-5 sm:text-[45px] text-[30px]  white text-center">
@@ -26,7 +30,7 @@ const PostDetails = (props) => {
       </h1>
       <div>
         <ReactMarkdown
-          renderers={costomRenderers}
+          components={customRenderers}
           className={classes.reactMarkDown}
         >
           {post.content}

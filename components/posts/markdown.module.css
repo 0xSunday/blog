@@ -22,22 +22,13 @@
   color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 .reactMarkDown code {
-  display: flex;
-  font-size: 1.3rem;
-  margin-top: 2em;
-  margin-bottom: 2em;
 
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: wrap;
 
-  background-color: RGB(15, 23, 42);
-  margin: 5px;
-  padding: 30px 20px;
-  border-style: solid;
 
-  border-color: rgb(253 224 71 / var(--tw-text-opacity));
-  border-radius: 10px;
+ 
+
+
+
 }
 .reactMarkDown p {
   font-size: 1.5rem;
