@@ -46,33 +46,36 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-      className="sm:px-20 py-9"
+      className="sm:px-20 py-9 bg-gradient-to-tr sm:from-purple-900 sm:via-stone-900 sm:to-purple-900 bg-transparent rounded-3xl"
     >
-      <div className="mb-3 pt-0">
-        <input
-          type="text"
-          placeholder="Your name"
-          name="name"
-          className="sm:px-5 px-3 py-3 my- placeholder-white rounded-3xl border-2  border-yellow-300   text-[20px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
-          required
-          ref={emailInputRef}
-        />
+      <div className="flex flex-col sm:flex-row ">
+        <div className="mb-3 pt-0 w-full sm:pr-10 pr-0">
+          <input
+            type="text"
+            placeholder="Your name"
+            name="name"
+            className="sm:px-5 px-3 py-3 my-3 placeholder-white rounded-3xl border-2  border-yellow-300   sm:text-[20px] text[15px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
+            required
+            ref={emailInputRef}
+          />
+        </div>
+        <div className="mb-3 pt-0 w-full">
+          <input
+            type="email"
+            placeholder="Email"
+            name="email"
+            className="sm:px-5 px-3 py-3 my-3 placeholder-white rounded-3xl border-2  border-yellow-300   sm:text-[20px] text[15px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
+            required
+            ref={nameInputRef}
+          />
+        </div>
       </div>
-      <div className="mb-3 pt-0">
-        <input
-          type="email"
-          placeholder="Email"
-          name="email"
-          className="sm:px-5 px-3 py-3 my-3 placeholder-white rounded-3xl border-2  border-yellow-300   text-[20px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
-          required
-          ref={nameInputRef}
-        />
-      </div>
+
       <div className="mb-3 pt-0">
         <textarea
           placeholder="Your message"
           name="message"
-          className="sm:px-5 px-3 py-3 my-3 placeholder-white rounded-3xl border-2  border-yellow-300   text-[20px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
+          className="sm:px-5 px-3 py-3 my-3 placeholder-white rounded-3xl border-2  border-yellow-300   sm:text-[20px] text[15px]  text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
           required
           ref={commentInputRef}
         />
