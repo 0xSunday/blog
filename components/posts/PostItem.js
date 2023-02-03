@@ -35,8 +35,8 @@ function PostItem(props) {
         </div>
         <div className="  w-full   px-5 py-5 text-center  rounded-b-3xl flex flex-col justify-end    bg-black h-full ">
           <h3 className="font-poppins text-2xl font-bold text-yellow-300 sm:max-w-[25rem] max-w-[17rem] ">
-            {/* {title} */}
-            hello my name is sunil and i am a
+            {title}
+           
           </h3>
           <time className=" sm:max-w-[25rem]  max-w-[17rem] text-white">
             {formattedDate}
