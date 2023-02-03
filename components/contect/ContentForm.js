@@ -57,7 +57,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
-      className="sm:px-20 py-9 bg-gradient-to-tr sm:from-[#2A0944] sm:via-[#3FA796] sm:to-[#2A0944] rounded-3xl"
+      className="sm:px-20 py-9 bg-gradient-to-tr  from-primary via-[#0A2647] to-primary  rounded-3xl"
     >
       <div className="flex flex-col sm:flex-row ">
         <div className="mb-3 pt-0 w-full sm:pr-10 pr-0">
