@@ -6,7 +6,7 @@ import { AiTwotoneMail } from "react-icons/ai";
 const Footer = (props) => {
   return (
     <section id="contect" className="mt-auto">
-      <div className="  flex flex-row justify-around border-t-2 border-yellow-300 sm:px-32 px-6 py-6 sm:py-10 sm:mx-10 mx-5 bottom-0 right-0 left-0 absolute">
+      <div className="flex flex-row justify-around border-t-2 border-yellow-300 sm:px-32 px-6 py-6 sm:py-10 sm:mx-10 mx-5 bottom-0 right-0 left-0 absolute">
         <Link
           href="https://www.instagram.com/sunil.eth/"
           className="text-3xl text-yellow-300 hover:text-yellow-700"

@@ -17,10 +17,10 @@ function PostItem(props) {
 
   return (
     <li
-      className={`flex flex-1 items-center justify-between shadow-3xl bg-black rounded-3xl border-2 hover:border-yellow-300 hover:zoom border-white image-box ${classes.post}`}
+      className={`flex flex-1 items-center justify-between shadow-3xl w-full h-full bg-black rounded-3xl border-2 hover:border-yellow-300 hover:zoom border-white image-box ${classes.post}`}
     >
       <Link href={linkPath} className="flex flex-col justify-center">
-        <div className="flex justify-center items-center rounded-3xl   ">
+        <div className={`flex justify-center  items-center rounded-3xl   `}>
           <Image
             className="object-cover rounded-t-3xl "
             src={imagePath}

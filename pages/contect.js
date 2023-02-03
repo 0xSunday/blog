@@ -1,5 +1,6 @@
 import ContentForm from "@/components/contect/ContentForm";
-import Footer from "@/components/footer";
+import Footer from "@/components/Footer";
+
 import NavBar from "@/components/NavBar";
 import React from "react";
 
