@@ -1,6 +1,5 @@
 import ContentForm from "@/components/contect/ContentForm";
-import Footer from "@/components/Footer";
-
+// import Footer from "@/components/footer";
 import NavBar from "@/components/NavBar";
 import React from "react";
 
@@ -10,7 +9,7 @@ const contect = () => {
       <NavBar con={false} cont={false} allp={true} />
       <ContentForm />
 
-      <Footer />
+      {/* <Footer /> */}
     </section>
   );
 };
