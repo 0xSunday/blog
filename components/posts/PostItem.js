@@ -17,15 +17,15 @@ function PostItem(props) {
 
   return (
     <li
-      className={`flex flex-1 items-center justify-between shadow-3xl w-full h-full bg-black rounded-3xl ${classes.post}`}
+      className={`flex flex-1 items-center justify-center  shadow-3xl w-[100%] h-[100%] bg-black rounded-3xl ${classes.post}`}
     >
       <Link
         href={linkPath}
-        className="flex flex-col overflow-hidden justify-center  border-2 rounded-3xl hover:border-yellow-300 hover:zoom border-white image-box"
+        className="flex flex-col overflow-hidden justify-center items-center border-2 rounded-3xl hover:border-yellow-300 hover:zoom border-white image-box"
       >
         <div className={`flex justify-center  items-center  `}>
           <Image
-            className="  rounded-t-3xl w-[100%] object-cover sm:h-[15rem] h-[100%]"
+            className="  rounded-t-3xl sm:w-[30rem] object-cover sm:h-[15rem]  w-[100%] h-[100%]  "
             src={imagePath}
             alt={title}
             width={300}
@@ -33,12 +33,17 @@ function PostItem(props) {
             // layout="responsive"
           />
         </div>
-        <div className="px-5 py-5 text-center  rounded-b-3xl flex flex-col justify-end   bg-black h-full ">
-          <h3 className="font-poppins text-2xl font-bold text-yellow-300">
-            {title}
+        <div className="  w-full   px-5 py-5 text-center  rounded-b-3xl flex flex-col justify-end    bg-black h-full ">
+          <h3 className="font-poppins text-2xl font-bold text-yellow-300 sm:max-w-[25rem] max-w-[17rem] ">
+            {/* {title} */}
+            hello my name is sunil and i am a
           </h3>
-          <time className=" text-white">{formattedDate}</time>
-          <p className=" text-white font-semibold">{excerpt}</p>
+          <time className=" sm:max-w-[25rem]  max-w-[17rem] text-white">
+            {formattedDate}
+          </time>
+          <p className="sm:max-w-[25rem] text-white font-semibold  max-w-[17rem]">
+            {excerpt}
+          </p>
         </div>
       </Link>
     </li>
