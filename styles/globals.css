@@ -235,11 +235,8 @@ body {
 }
 
 .image-box {
-  max-width: 100%;
   transition: all 0.3s;
-  display: block;
-  width: 100%;
-  height: auto;
+
   transform: scale(1);
 }
 
