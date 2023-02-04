@@ -12,5 +12,4 @@ function PostsGrid(props) {
     </ul>
   );
 }
-
 export default PostsGrid;
