@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { use, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 const NavBar = (props) => {
@@ -13,7 +13,7 @@ const NavBar = (props) => {
       <motion.h1
         className="font-1 font-poppins font-semibold ss:text-[52px] text-[32px] text-white "
         animate={{ x: ["-100vh", "50vh", "0vh"] }}
-        transition={{ delay: 0.2, type: "spring", duration: 0.6 }}
+        transition={{ delay: 0.2, type: "spring", duration: 0.7 }}
       >
         <Link href="/">
           BL
