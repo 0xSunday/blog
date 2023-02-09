@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Blog</title>
+        <title>Sol Casino</title>
         <meta
           name="description"
           content="personal blog website for sunil reddy"
