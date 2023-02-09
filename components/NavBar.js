@@ -16,14 +16,14 @@ const NavBar = (props) => {
         transition={{ delay: 0.2, type: "spring", duration: 0.7 }}
       >
         <Link href="/">
-          {/* BL
-          <span className="text-yellow-300">O</span>G */}
-          <img
+          BL
+          <span className="text-yellow-300">O</span>G
+          {/* <img
             src="https://solcasino.io/e39a525d1e61bbbe99bc22ad79468207.png"
             alt="sol casino"
-            className="  w-64"
-            // className="rounded-full h-52 w-52 sm:h-72 sm:w-72"
-          />
+           
+            className="rounded-full h-52 w-52 sm:h-72 sm:w-72"
+          /> */}
         </Link>
       </motion.h1>
 
