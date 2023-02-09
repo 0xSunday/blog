@@ -2,23 +2,6 @@ import PostItem from "./PostItem";
 import classes from "./PostGird.module.css";
 import { motion, Variants } from "framer-motion";
 
-const cardVariants = {
-  offscreen: {
-    y: 200,
-    opacity: 0,
-  },
-  onscreen: {
-    y: 0,
-    opacity: [0, 1],
-
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8
-    },
-  },
-};
-
 function PostsGrid(props) {
   const { posts } = props;
 
@@ -27,10 +10,8 @@ function PostsGrid(props) {
       {posts.map((post) => (
         <motion.div
           key={post.slug}
-          variants={cardVariants}
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.3 }}
+          className="delay-[300ms] duration-[600ms] taos:[transform:translate3d(0,-200px,0)_scale(0.6)] taos:opacity-0"
+          data-taos-offset="500"
         >
           <PostItem post={post} />
         </motion.div>
