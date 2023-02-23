@@ -13,9 +13,9 @@ const ContactForm = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-
-    const enteredEmail = emailInputRef.current.value;
     const enteredName = nameInputRef.current.value;
+    const enteredEmail = emailInputRef.current.value;
+
     const enteredComment = commentInputRef.current.value;
 
     // console.log(enteredComment, enteredEmail, enteredName);
@@ -37,8 +37,10 @@ const ContactForm = () => {
       throw new Error(data.message || "something went wong !");
     }
 
-    emailInputRef.current.value = "";
+    console.log(await data);
     nameInputRef.current.value = "";
+    emailInputRef.current.value = "";
+
     commentInputRef.current.value = "";
   };
 
@@ -67,7 +69,7 @@ const ContactForm = () => {
             name="name"
             className="sm:px-5 px-3 py-3 my-3 placeholder-dimWhite rounded-3xl border-2  border-yellow-300   sm:text-[20px] text[15px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
             required
-            ref={emailInputRef}
+            ref={nameInputRef}
           />
         </div>
         <div className="mb-3 pt-0 w-full">
@@ -77,7 +79,7 @@ const ContactForm = () => {
             name="email"
             className="sm:px-5 px-3 py-3 my-3 placeholder-dimWhite rounded-3xl border-2  border-yellow-300   sm:text-[20px] text[15px] text-white relative bg-black   shadow outline-none focus:outline-none focus:no-underline w-full"
             required
-            ref={nameInputRef}
+            ref={emailInputRef}
           />
         </div>
       </div>
